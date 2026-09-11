@@ -1,13 +1,198 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Abdul Mansoor | Computer Engineer</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Abdul Kalam Mansoor — Computer Engineer</title>
+<meta name="description" content="Abdul Kalam Mansoor — Computer Engineering graduate student focused on systems security and networking. Projects, research, and publications.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="wordmark" href="#top">AKM</a>
+    <button id="nav-toggle" class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+    <nav id="site-nav" class="site-nav">
+      <a href="#work">Work</a>
+      <a href="#research">Research</a>
+      <a href="#experience">Experience</a>
+      <a href="#about">About</a>
+      <a href="#contact" class="nav-cta">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- HERO -->
+  <section id="top" class="hero">
+    <div class="wrap hero-grid">
+      <div class="hero-text">
+        <p class="hero-kicker">Computer Engineering — M.S. candidate, City College of New York</p>
+        <h1>Abdul Kalam Mansoor</h1>
+        <p class="hero-lede">
+          I break things to understand them, then build the fix. Most recently: reproducing a
+          real CPU speculative-execution exploit in simulation, and closing it.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#work">See the work</a>
+          <a class="btn btn-ghost" href="mailto:abdulkalammansoor3@gmail.com">Get in touch</a>
+        </div>
+      </div>
+      <div class="hero-visual" aria-hidden="false">
+        <div class="terminal" role="img" aria-label="Terminal output from the Retbleed attack demonstration showing a successful cache side-channel leak, followed by the same attack failing after a security patch is applied.">
+          <div class="terminal-bar">
+            <span class="dot dot-r"></span><span class="dot dot-y"></span><span class="dot dot-g"></span>
+            <span class="terminal-title">retbleed-poc — zsh</span>
+          </div>
+          <div class="terminal-body" id="terminal-body"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="about" class="section skills-section">
+    <div class="wrap">
+      <h2>What I work with</h2>
+      <div class="skill-groups">
+        <div class="skill-group">
+          <h3>Security &amp; Systems</h3>
+          <p>Access control, authentication &amp; authorization, system logging, backup, runtime integrity monitoring</p>
+        </div>
+        <div class="skill-group">
+          <h3>Networking</h3>
+          <p>TCP/IP, DNS, VPN, SSH, HTTPS, SSL/TLS, network diagnostics, congestion control</p>
+        </div>
+        <div class="skill-group">
+          <h3>IT &amp; Infrastructure</h3>
+          <p>Linux, Windows, hosting &amp; deployment, cPanel, MySQL, system configuration</p>
+        </div>
+        <div class="skill-group">
+          <h3>Tools</h3>
+          <p>Git, GitHub, Docker, SQL Server, Azure Data Studio, gem5, ns-3</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="work" class="section">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Work</h2>
+        <p class="section-sub"><span id="project-count">0</span> projects — filter by domain</p>
+      </div>
+
+      <div id="filter-bar" class="filter-bar" role="tablist" aria-label="Filter projects by category">
+        <button class="is-active" data-filter="all">All</button>
+        <button data-filter="security">Security</button>
+        <button data-filter="networking">Networking</button>
+        <button data-filter="database">Database</button>
+        <button data-filter="hardware">Hardware</button>
+        <button data-filter="research">Research</button>
+      </div>
+
+      <div id="project-list" class="project-list"><!-- rendered by js/main.js --></div>
+    </div>
+  </section>
+
+  <!-- RESEARCH & PUBLICATIONS -->
+  <section id="research" class="section alt-bg">
+    <div class="wrap">
+      <h2>Research &amp; publications</h2>
+      <div class="pub-row">
+        <div class="pub-heading">
+          <span class="project-title">Mitigating E-Commerce Security Risks with Blockchain: A Multi-Layered Architecture</span>
+          <span class="pub-date">IEEE · 2024</span>
+        </div>
+        <p>Research on blockchain-based security using Zero-Knowledge Proofs, Homomorphic Encryption, and smart contracts to improve authentication, privacy, and secure e-commerce transactions.</p>
+        <a class="project-link" href="https://ieeexplore.ieee.org/document/10581253" target="_blank" rel="noopener">Read on IEEE Xplore</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience" class="section">
+    <div class="wrap">
+      <h2>Experience</h2>
+      <div class="timeline-row">
+        <div class="timeline-when">
+          <span class="project-date">Jun 2023 – Jul 2024</span>
+        </div>
+        <div class="timeline-what">
+          <h3>Software Engineering &amp; Hosting Intern — Impact IT</h3>
+          <p class="timeline-loc">Kathmandu, Nepal</p>
+          <ul>
+            <li>Supported and maintained 20+ hosted web applications, troubleshooting Linux, DNS, SSL/TLS, connectivity, and database/application configuration issues.</li>
+            <li>Diagnosed root causes using server logs, SSH, and network diagnostics to restore application and hosting services.</li>
+            <li>Configured and maintained cPanel hosting, DNS, SSL/TLS, MySQL databases, backups, and user permissions, resolving deployment issues.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION + CERTS -->
+  <section class="section alt-bg">
+    <div class="wrap two-col">
+      <div>
+        <h2>Education</h2>
+        <div class="edu-row">
+          <h3>M.S., Computer Engineering</h3>
+          <p class="timeline-loc">City College of New York · Expected Jan 2027</p>
+        </div>
+        <div class="edu-row">
+          <h3>B.E., Computer Science &amp; Engineering</h3>
+          <p class="timeline-loc">Chandigarh University · Jul 2024</p>
+        </div>
+      </div>
+      <div>
+        <h2>Certifications</h2>
+        <ul class="cert-list">
+          <li><a href="https://coursera.org/share/2df5590e83f248f408e3cd967d02e474" target="_blank" rel="noopener">Python Programming for Everybody</a></li>
+          <li><a href="https://www.coursera.org/account/accomplishments/verify/4RP83PAMEAU5" target="_blank" rel="noopener">Introduction to Cybersecurity Tools &amp; Cyberattacks</a></li>
+          <li><a href="https://coursera.org/share/9b014fd956ee14577ef37f31cea94612" target="_blank" rel="noopener">Computer Vision for Engineering &amp; Science</a></li>
+          <li><a href="https://www.coursera.org/account/accomplishments/verify/L4VW8J6SXMU2" target="_blank" rel="noopener">AI For Everyone</a></li>
+          <li><a href="https://archive.nptel.ac.in/content/noc/NOC23/SEM1/Ecertificates/106/noc23-cs43/Course/NPTEL23CS43S2432116703015845.jpg" target="_blank" rel="noopener">Data Mining (NPTEL)</a></li>
+          <li><a href="https://archive.nptel.ac.in/content/noc/NOC22/SEM2/Ecertificates/106/noc22-cs61/Course/NPTEL22CS61S10467187110051546.jpg" target="_blank" rel="noopener">Software Testing (NPTEL)</a></li>
+          <li><a href="https://trainings.internshala.com/view_certificate/91393ABD-E2E7-5C89-FE0F-FC856AE24EFE/A900B6AB-1F7E-7964-0F1B-132CA1611DD8/" target="_blank" rel="noopener">Core Java with AI</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section contact-section">
+    <div class="wrap">
+      <h2>Let's talk</h2>
+      <p class="section-sub">Open to cybersecurity, networking, and systems engineering roles and internships.</p>
+      <div class="contact-links">
+        <a class="btn btn-primary" href="mailto:abdulkalammansoor3@gmail.com">abdulkalammansoor3@gmail.com</a>
+        <a class="btn btn-ghost" href="https://www.linkedin.com/in/abdulkalammansoor/" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn btn-ghost" href="https://github.com/abdul-kalam2000" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>Jersey City, NJ · +1 (201) 877-8915</p>
+    <p>&copy; <span id="year"></span> Abdul Kalam Mansoor</p>
+  </div>
+</footer>
+
+<script src="js/projects-data.js"></script>
+<script src="js/main.js"></script>
+</body>
 </html>
